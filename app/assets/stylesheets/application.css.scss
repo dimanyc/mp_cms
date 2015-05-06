@@ -1,0 +1,184 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_self
+ */
+
+@import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css");
+@import "bourbon";
+@import "grid-settings";
+@import "neat";
+@import "colors";
+@import "font-faces";
+@import "design";
+@import "about";
+@import "contact";
+
+html
+{
+  min-height:100%;
+  height:auto !important;
+  height:100%;
+  overflow-y: scroll;
+}
+
+body
+{  
+  background-size:cover;
+  background-position: left;
+  font-family: $gill;
+  line-height: $gill-line-height;
+  @include hidpi(1.5) {width: 20em;}
+}
+
+section
+{
+
+  background-size:cover;
+  background-position: center center;
+  position:absolute;
+  left:0;  
+  min-width:100%;
+  min-height:100%;  
+  z-index:1;
+
+}
+
+header
+{
+  background-color: $transparent_white;
+  height:rem(135);
+  border-top: rem(60) #58595b solid;
+  position:fixed;
+  top:0;
+  width:100%;
+  z-index:2;
+  h1
+  {
+      display:table-cell;
+      font-family: $genath_regular;
+      overflow: hidden;
+    a
+    {
+      color:$black;
+      font-size:21px;
+      font-weight:normal;
+      text-decoration: none;
+    }
+  }
+  
+  form
+  {
+    text-align: right;
+    label
+    {
+      font-family:$genath_regular;
+      font-weight:normal;
+      color: $grey;          
+      font-size:$geneath_light_font_size;
+    }
+    input
+    {
+      border:0;
+      border-bottom:1px solid $light_grey;
+      background-color:rgba(88,89,91,0);
+      font-family: $gill;
+      font-size:12px;
+      font-weight: normal;
+      letter-spacing:0.01em;
+      margin-left:3px;
+    }
+    input[type="submit"]
+    {
+      border:none;
+      background-image:image-url("carret-right.svg");
+      background-repeat:no-repeat;
+      background-position: center;
+      height: 10px;
+    }
+  }
+}
+
+footer
+{
+  position:fixed;
+  bottom:0px;
+  left:0px;
+  background-color: $transparent_white;
+  height:60px;
+  z-index:2;
+  @include span-columns(12); 
+  .wrapper{margin-top:0;}
+  ul
+  {
+    @include span-columns(4);
+    list-style-type: none;
+    margin-top:22px;
+    margin-bottom: 0;
+    li
+    {
+      float:left;
+      font-family: $gill;
+      color: $light_grey;
+      a
+      {
+        text-transform: uppercase;
+        text-decoration: none;
+        font-family: $genath_bold;
+        color:$black;
+        margin-right:11px;
+      }
+    }
+    li:not(first-child){margin-left:11px;}
+  }
+
+  span
+  {
+    @include span-columns(4);
+    text-align: center;
+    font-family: $genath_regular;
+    color: $light_grey;
+    font-size:$geneath_light_font_size;
+    margin-top: 10px;
+
+    a:not(.btn)
+    {
+      text-decoration: none;
+      color: $light_grey;
+      display: block;
+      margin-bottom: 5px;
+
+    }
+
+  }
+  input[type="button"], a.btn
+  {
+    background-color: $black;
+    border:0;
+    color:white;
+    font-family: $gill_light;
+    font-size:18px;
+    width:250px;
+    height:40px;
+    margin-top: 11px;
+    float:right;
+    margin-right:30px;
+    text-decoration: none;
+    text-align: center;
+    padding-top:10px;
+  }
+}
+
+// Positioning 
+.wrapper{@include outer-container;display:table;width: 100%;margin-top: rem(6);}
+h1,h2{font-family: $genath_regular;font-weight:normal;font-size: rem(48);line-height: rem(40);}
+

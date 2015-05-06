@@ -1,0 +1,62 @@
+@font-face {
+    font-family: 'genathregular_italic';
+    src: asset-url('Genath-RegularIta-webfont.eot');
+    src: asset-url('Genath-RegularIta-webfont.eot?#iefix') format('embedded-opentype'),
+         asset-url('Genath-RegularIta-webfont.woff2') format('woff2'),
+         asset-url('Genath-RegularIta-webfont.woff') format('woff'),
+         asset-url('Genath-RegularIta-webfont.ttf') format('truetype'),
+         asset-url('Genath-RegularIta-webfont.svg#genathregular_italic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family:'Genath-BoldIta';
+    src: asset-url('Genath-BoldIta_gdi.eot');
+    src: asset-url('Genath-BoldIta_gdi.eot?#iefix') format('embedded-opentype'),
+        asset-url('Genath-BoldIta_gdi.woff') format('woff'),
+        asset-url('Genath-BoldIta_gdi.ttf') format('truetype'),
+        asset-url('Genath-BoldIta_gdi.otf') format('opentype'),
+        asset-url('Genath-BoldIta_gdi.svg#Genath-BoldIta') format('svg');
+    font-weight: 700;
+    font-style: italic;
+    font-stretch: normal;
+    unicode-range: U+0020-25CA;
+}
+
+@font-face {
+    font-family: 'genathlight_italic';
+    src: asset-url('Genath-LightIta-webfont.eot');
+    src: asset-url('Genath-LightIta-webfont.eot?#iefix') format('embedded-opentype'),
+         asset-url('Genath-LightIta-webfont.woff2') format('woff2'),
+         asset-url('Genath-LightIta-webfont.woff') format('woff'),
+         asset-url('Genath-LightIta-webfont.ttf') format('truetype'),
+         asset-url('Genath-LightIta-webfont.svg#genathlight_italic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family:'gillsans_light';
+    src: asset-url('GillSansMTPro-Light_gdi.eot');
+    src: asset-url('GillSansMTPro-Light_gdi.eot?#iefix') format('embedded-opentype'),
+        asset-url('GillSansMTPro-Light_gdi.woff') format('woff'),
+        asset-url('GillSansMTPro-Light_gdi.ttf') format('truetype'),
+        asset-url('GillSansMTPro-Light_gdi.otf') format('opentype'),
+        asset-url('GillSansMTPro-Light_gdi.svg#GillSansMTPro-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    unicode-range: U+0020-25CA;
+}
+
+
+$genath_bold: 'Genath-BoldIta';
+$genath_regular: 'genathregular_italic';
+$genath_light: 'genathlight_italic';
+$gill: 'gillsans';
+$gill_light: 'gillsans_light';
+$gill_light_font_size: rem(14); 
+$geneath_light_font_size: rem(14);
+$gill-line-height: rem(18);

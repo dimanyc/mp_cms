@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 18.1.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 30 30" enable-background="new 0 0 30 30" xml:space="preserve">
+<defs>
+	<filter id="Adobe_OpacityMaskFilter" filterUnits="userSpaceOnUse" x="0" y="0" width="30" height="30">
+		
+			<feColorMatrix  type="matrix" values="-1 0 0 0 1  0 -1 0 0 1  0 0 -1 0 1  0 0 0 1 0" color-interpolation-filters="sRGB" result="source"/>
+		<feFlood  style="flood-color:white;flood-opacity:1" result="back"/>
+		<feBlend  in="source" in2="back" mode="normal"/>
+	</filter>
+</defs>
+<mask maskUnits="userSpaceOnUse" x="0" y="0" width="30" height="30" id="SVGID_1_">
+	<g filter="url(#Adobe_OpacityMaskFilter)">
+		<g>
+			<g>
+				<polyline fill="none" stroke="#FFFFFF" stroke-width="0.75" stroke-miterlimit="10" points="20.3,18.1 19.1,12.6 16.9,10.5 
+					16.9,14.9 17.7,15.7 				"/>
+				<path fill="none" stroke="#FFFFFF" stroke-width="0.75" stroke-miterlimit="10" d="M20.2,18.4c0-0.2,0.1-0.2,0.2-0.2
+					c0.2,0,0.2,0.1,0.2,0.2c0,0.2-0.1,0.2-0.2,0.2C20.2,18.6,20.2,18.5,20.2,18.4z"/>
+				<path fill="none" stroke="#FFFFFF" stroke-width="0.75" stroke-miterlimit="10" d="M17.7,15.9c0-0.2,0.1-0.2,0.2-0.2
+					c0.2,0,0.2,0.1,0.2,0.2c0,0.2-0.1,0.2-0.2,0.2C17.7,16.1,17.7,16.1,17.7,15.9z"/>
+			</g>
+			<g>
+				<path fill="none" stroke="#FFFFFF" stroke-width="0.75" stroke-miterlimit="10" d="M23.1,21.6c0-0.2,0.1-0.2,0.2-0.2
+					c0.2,0,0.2,0.1,0.2,0.2c0,0.2-0.1,0.2-0.2,0.2C23.1,21.8,23.1,21.8,23.1,21.6z"/>
+				<path fill="none" stroke="#FFFFFF" stroke-width="0.75" stroke-miterlimit="10" d="M17.8,5.5c0-0.2,0.1-0.2,0.2-0.2
+					c0.2,0,0.2,0.1,0.2,0.2c0,0.2-0.1,0.2-0.2,0.2C17.9,5.8,17.8,5.7,17.8,5.5z"/>
+				<polyline fill="none" stroke="#FFFFFF" stroke-width="0.75" stroke-miterlimit="10" points="18.1,5.8 19.1,10 21.1,12 
+					23.2,21.3 				"/>
+			</g>
+			<g>
+				<polyline fill="none" stroke="#FFFFFF" stroke-width="0.75" stroke-miterlimit="10" points="11.9,5.8 10.9,10 8.9,12 6.8,21.3 
+									"/>
+				<path fill="none" stroke="#FFFFFF" stroke-width="0.75" stroke-miterlimit="10" d="M6.9,21.6c0-0.2-0.1-0.2-0.2-0.2
+					c-0.2,0-0.2,0.1-0.2,0.2c0,0.2,0.1,0.2,0.2,0.2C6.9,21.8,6.9,21.8,6.9,21.6z"/>
+				<path fill="none" stroke="#FFFFFF" stroke-width="0.75" stroke-miterlimit="10" d="M12.2,5.5c0-0.2-0.1-0.2-0.2-0.2
+					c-0.2,0-0.2,0.1-0.2,0.2c0,0.2,0.1,0.2,0.2,0.2C12.1,5.8,12.2,5.7,12.2,5.5z"/>
+			</g>
+			<line fill="none" stroke="#FFFFFF" stroke-width="0.75" stroke-miterlimit="10" x1="15.1" y1="4.4" x2="15.1" y2="25.7"/>
+			<path fill="none" stroke="#FFFFFF" stroke-width="0.75" stroke-miterlimit="10" d="M15.4,4.2c0-0.2-0.1-0.2-0.2-0.2
+				S14.9,4,14.9,4.2c0,0.2,0.1,0.2,0.2,0.2S15.4,4.4,15.4,4.2z"/>
+			<g>
+				<path fill="none" stroke="#FFFFFF" stroke-width="0.75" stroke-miterlimit="10" d="M13.4,9.3c0-0.2-0.1-0.2-0.2-0.2
+					c-0.2,0-0.2,0.1-0.2,0.2c0,0.2,0.1,0.2,0.2,0.2C13.3,9.5,13.4,9.4,13.4,9.3z"/>
+				<polyline fill="none" stroke="#FFFFFF" stroke-width="0.75" stroke-miterlimit="10" points="13.2,10.3 11,12.5 10.6,14.5 				
+					"/>
+				<path fill="none" stroke="#FFFFFF" stroke-width="0.75" stroke-miterlimit="10" d="M10.8,14.7c0-0.2-0.1-0.2-0.2-0.2
+					c-0.2,0-0.2,0.1-0.2,0.2c0,0.2,0.1,0.2,0.2,0.2C10.7,15,10.8,14.9,10.8,14.7z"/>
+				<path fill="none" stroke="#FFFFFF" stroke-width="0.75" stroke-miterlimit="10" d="M12.4,21c0-0.2-0.1-0.2-0.2-0.2
+					c-0.2,0-0.2,0.1-0.2,0.2c0,0.2,0.1,0.2,0.2,0.2C12.4,21.3,12.4,21.2,12.4,21z"/>
+				<polyline fill="none" stroke="#FFFFFF" stroke-width="0.75" stroke-miterlimit="10" points="13.2,9.5 13.2,20 12.4,20.9 				"/>
+			</g>
+			<path fill="none" stroke="#FFFFFF" stroke-width="0.75" stroke-miterlimit="10" d="M15.4,25.7c0-0.2-0.1-0.2-0.2-0.2
+				s-0.2,0.1-0.2,0.2c0,0.2,0.1,0.2,0.2,0.2S15.4,25.9,15.4,25.7z"/>
+		</g>
+	</g>
+</mask>
+<path mask="url(#SVGID_1_)" fill="#101010" d="M15,0L15,0C6.7,0,0,6.7,0,15v0c0,8.3,6.7,15,15,15h0c8.3,0,15-6.7,15-15v0
+	C30,6.7,23.3,0,15,0z"/>
+</svg>
