@@ -42,11 +42,7 @@
       <div class="wrapper">
         <div id="contact-form">
           <%=raw @page.content_for(:contact_form_labels) %>
-          <form>
-            <input id="contact_name" name="contact[name]" placeholder="name" type="text" /><input id="contact_email" name="contact[email]" placeholder="email" type="email" />
-            <textarea id="contact_message" name="contact[message]" placeholder="message"></textarea>
-            <input name="commit" type="submit" value="Send" />
-          </form>
+          <%=raw @page.content_for(:contact_form_fields) %>
         </div>
         <%=raw @page.content_for(:contact_mission_statement) %>
         <div id="inquries">
@@ -64,66 +60,99 @@
       <div class="wrapper">
         <%=raw @page.content_for(:about_arnica) %>
         <%=raw @page.content_for(:about_laura_and_robert) %>
-        <div id="laura-coombs">
-          <h2>
-            Laura Coombs
-          </h2>
-          <ul>
-            <li>
-              <a href="google.com"><img src="/assets/mp_icons_social_twitter.svg" /></a>
-            </li>
-            <li>
-              <a href="google.com"><img src="/assets/mp_icons_social_instagram.svg" /></a>
-            </li>
-            <li>
-              <a href="google.com"><img src="/assets/mp_icons_social_linkdin.svg" /></a>
-            </li>
-            <li>
-              <a href="google.com"><img src="/assets/mp_icons_social_github.svg" /></a>
-            </li>
-          </ul>
-          <img src="/assets/laura-coombs-avatar.png" />
-          <p>
-            Laura completed her Bachelor of Architecture degree at Cornell University where, for her thesis work, she designed and tested new geodesic tensegrity structures based on the work of Buckminster Fuller.  She has worked for Herman Miller as an Exhibition Designer and is currently pursuing an MFA in design at the Yale School of Art.
-          </p>
-        </div>
-        <div id="robert-lee-brackett">
-          <h2>
-            Robert Lee Brackett
-          </h2>
-          <ul>
-            <li>
-              <a href="http://www.digitalnouveau.com/"><img src="/assets/mp_icons_social_dn.svg" /></a>
-            </li>
-            <li>
-              <a href="https://twitter.com/rlblood"><img src="/assets/mp_icons_social_twitter.svg" /></a>
-            </li>
-            <li>
-              <a href="https://instagram.com/rooksisfun/"><img src="/assets/mp_icons_social_instagram.svg" /></a>
-            </li>
-            <li>
-              <a href="https://www.linkedin.com/in/rlbrackett3"><img src="/assets/mp_icons_social_linkdin.svg" /></a>
-            </li>
-            <li>
-              <a href="https://github.com/rlbrackett3"><img src="/assets/mp_icons_social_github.svg" /></a>
-            </li>
-          </ul>
-          <img src="/assets/robert-lee-brackett-avatar.png" />
-          <p>
-            Robert studied architecture at the University of Illinois at Urbana-Champaign where he received the Earl Prize for Design and graduated with highest honors.  While there, he worked with Carolyn Dry researching self-healing material systems for NASA and the US Air Force.  Robert received an M.Arch from Columbia University’s GSAPP in New York with the AIA Medal for Excellence in Architecture.  He currently teaches architecture and design at The Pratt Institute, Columbia University, CityTech, Rensselaer Polytechnic Institute, and the New York Code &amp; Design Academy.
-          </p>
-        </div><!--end_robert-lee-bracket-->
+        <%=raw @page.content_for(:about_laura_coombs) %>
+        <%=raw @page.content_for(:about_robert_lee_brackett) %>
       </div><!--end_.wrapper-->
     </section><!--end_.about-->    
 
     <!-- Contact --> 
-    <%=raw @page.content_for(:design) %>
+    <%#=raw @page.content_for(:design) %>
+  <section id="design">
+    <div class="wrapper">
+      
+<!--     <div id="product_design_and_creation" class="slides">
+      <h2>Product Design &amp; Creation</h2>
+      <a href="#" class="slidesjs-next slidesjs-navigation"></a>
+      <img src="/assets/product-design-and-creation_.png" /></a>
+      <img src="http://placehold.it/470x215" /></a>
+      <img src="http://placehold.it/470x215" /></a>
+    </div>
+
+    <div id="product_design_and_creation" class="slides">
+      <h2>Identify &amp; Branding</h2>
+      <a href="#" class="slidesjs-next slidesjs-navigation"></a>
+      <img src="/assets/product-design-and-creation_.png" /></a>
+      <img src="http://placehold.it/470x215" /></a>
+      <img src="http://placehold.it/470x215" /></a>
+    </div>
+
+    <div id="product_design_and_creation" class="slides">
+      <h2>Graphic Design</h2>
+      <a href="#" class="slidesjs-next slidesjs-navigation"></a>
+      <img src="/assets/product-design-and-creation_.png" /></a>
+      <img src="http://placehold.it/470x215" /></a>
+      <img src="http://placehold.it/470x215" /></a>
+    </div>    
+
+    <div id="product_design_and_creation" class="slides">
+      <h2>Web Design</h2>
+      <a href="#" class="slidesjs-next slidesjs-navigation"></a>
+      <img src="/assets/product-design-and-creation_.png" /></a>
+      <img src="http://placehold.it/470x215" /></a>
+      <img src="http://placehold.it/470x215" /></a>
+    </div>     
+ -->
+
+      <div id="product_design_and_creation">
+        <h2>Product Design &amp; Creation</h2>
+        
+        <ul class="slides">
+          <img src="/assets/product-design-and-creation_.png" /></a>
+          <img src="http://placehold.it/470x215" /></a>
+          <img src="http://placehold.it/470x215" /></a>
+          <a href="#" class="slidesjs-next slidesjs-navigation"></a>            
+        </ul>
+      </div>
+
+      <div id="identity_and_branding">
+        <h2>Identify &amp; Branding</h2>
+        <ul class="slides">
+          <img src="/assets/product-design-and-creation_.png" /></a>
+          <img src="http://placehold.it/470x215" /></a>
+          <img src="http://placehold.it/470x215" /></a>
+          <a href="#" class="slidesjs-next slidesjs-navigation"></a>            
+        </ul>
+      </div>
+
+      <div id="graphic_design">
+        <h2>Graphic Design</h2>
+        <ul class="slides">
+          <img src="/assets/product-design-and-creation_.png" /></a>
+          <img src="http://placehold.it/470x215" /></a>
+          <img src="http://placehold.it/470x215" /></a>
+          <a href="#" class="slidesjs-next slidesjs-navigation"></a>            
+        </ul>
+      </div>
+
+      <div id="web_design">
+        <h2>Web Design</h2>
+        <ul class="slides">
+          <img src="/assets/product-design-and-creation_.png" /></a>
+          <img src="http://placehold.it/470x215" /></a>
+          <img src="http://placehold.it/470x215" /></a>
+          <a href="#" class="slidesjs-next slidesjs-navigation"></a>          
+        </ul>
+      </div>            
+
+    </div>
+
+  </section><!--end_#design-->
 
    <footer>
     <div class="wrapper">
       <ul>
         <li>
-          <a href="#design">Arnica </a>/ 
+          <a href="www.shoparnica.com" target="_blank">Arnica </a>/ 
         </li>
         <li>
           <a href="#about">About Us</a>/ 

@@ -6,13 +6,77 @@ section#design
   height: rem(840);
   @include span-columns(12);
 
-  ul
+  #product_design_and_creation,#identity_and_branding,#graphic_design,#web_design
   {
     @include span-columns(6 of 12);
-    height:rem(280);
+    position: relative;
+//     img
+//     {
+//       position:absolute;
+//       top:0;
+//       left:0;
+//       width:rem(470);
+//       height:rem(217);
+//     }
+//     .slidesjs-pagination-item{display: none;}    
+//   }
+  
+//   .slides
+//   {
+
+//   }
+//   #identity_and_branding,#web_design{@include omega();}
+//   #product_design_and_creation,#identity_and_branding {margin-top:rem(20);margin-bottom:ren(10);}
+}
+  #product_design_and_creation,#identity_and_branding,#graphic_design,#web_design
+  {
+    @include span-columns(6 of 12);
+    position:relative;
+    z-index:1;
+    
+    h2
+    {
+      font-size:rem(27);
+      background-color: $transparent_white;
+      padding: rem(12) 0 0 rem(20);
+      margin-top:0;
+      height:rem(65);
+      width:rem(470);
+      margin-bottom: 0;
+      position: absolute;
+      z-index: 100;
+    }
+
+    img
+    {
+      width:rem(470);
+      height:rem(217);
+      margin-top:rem(65);
+    }
+    a 
+    {
+      height:rem(30);
+      width:rem(30);
+      background-image:image-url("mp_icons_arrow_next.svg");
+      position:absolute;
+      top: rem(20);
+      right: rem(20);
+      z-index: 9999;      
+    }
+   
+    .slidesjs-pagination-item,.slidesjs-previous.slidesjs-navigation{display: none;}
+  }
+  #identity_and_branding,#web_design{@include omega();}
+  #product_design_and_creation,#identity_and_branding {margin-top:rem(20)}
+
+
+  ul
+  {
+    // @include span-columns(6 of 12);
     padding-left: 0;
     list-style-type: none;
     position:relative;
+    margin-top:0;
     li
     {
       position: absolute;
@@ -32,17 +96,15 @@ section#design
         }
       }
     }
-    // li:not(:nth-child(1)){display:none;}
-
   }
 
-  ul:nth-child(1),ul:nth-child(2){margin-bottom:rem(10);}
-  ul:nth-child(2),ul:nth-child(4){@include omega();}
-  ul:nth-child(3),ul:nth-child(4){margin-top:0;}
+  // ul:nth-child(1),ul:nth-child(2){margin-bottom:rem(10);}
+  // ul:nth-child(2),ul:nth-child(4){@include omega();}
+  // ul:nth-child(3),ul:nth-child(4){margin-top:0;}
 
   a img {  margin-top: rem(-23);}
 
-}
+  }
 
 @media screen 
   and (min-device-width: 1200px) 

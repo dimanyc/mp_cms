@@ -58,4 +58,5 @@ $(document).ready (function(){
   // smoothing the page scroll
   $("html").niceScroll();
 
+
 });
