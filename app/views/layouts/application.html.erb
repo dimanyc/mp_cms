@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Miscellaneous Projects, llc | Product design &amp; development</title>
+    <meta content="Product design &amp;amp; development" name="description" />
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport" />
+  </head>
+  <link data-turbolinks-track="true" href="/assets/application.css?body=1" media="all" rel="stylesheet" /><script data-turbolinks-track="true" src="/assets/jquery.js?body=1"></script>
+  <script data-turbolinks-track="true" src="/assets/jquery_ujs.js?body=1"></script>
+  <script data-turbolinks-track="true" src="/assets/turbolinks.js?body=1"></script>
+  <script data-turbolinks-track="true" src="/assets/carousel.js?body=1"></script>
+  <script data-turbolinks-track="true" src="/assets/home.js?body=1"></script>
+  <script data-turbolinks-track="true" src="/assets/jquery.nicescroll.min.js?body=1"></script>
+  <script data-turbolinks-track="true" src="/assets/jquery.slides.min.js?body=1"></script>
+  <script data-turbolinks-track="true" src="/assets/parallax.min.js?body=1"></script>
+  <script data-turbolinks-track="true" src="/assets/application.js?body=1"></script><meta content="authenticity_token" name="csrf-param" />
+  <meta content="vWgG1UG73eP35WoCXZITmAM99P/uL6pz1WDZBsmKyqA=" name="csrf-token" />
+  <body>
+    <header>
+      <div class="wrapper">
+
+        <h1>
+          <a href="/">Miscellaneous Projects </a>
+        </h1>
+
+        <div class="sendgrid-subscription-widget" data-token="1M5Z249eGJzJ34D5llN3s2KkzNImaU9gZp8ImuJSw1pmhsJvugAYeWJXhtK1aWLO" data-executed="true">
+          <form>
+            <div class="response"></div>
+            <label for="contact_Sign up to hear about new projects: ">Sign up to hear about new projects: </label>
+            <input id="email" name="contact[email]" placeholder="email" type="email" />
+            <input name="commit" type="submit" value="" />
+          </form> 
+        </div><!--end_sendgrid_wrapper-->
+
+        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?"http":"https";if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://s3.amazonaws.com/subscription-cdn/0.2/widget.min.js";fjs.parentNode.insertBefore(js,fjs);}}(document, "script", "sendgrid-subscription-widget-js");
+        </script>      
+
+    </header>
+    
+    <!-- Contact --> 
+    <section data-image-src="assets/arnica-products.jpg" data-natural-height="900" data-natural-width="1400" data-parallax="scroll" id="contact">
+      <div class="wrapper">
+        <div id="contact-form">
+          <%=raw @page.content_for(:contact_form_labels) %>
+          <form>
+            <input id="contact_name" name="contact[name]" placeholder="name" type="text" /><input id="contact_email" name="contact[email]" placeholder="email" type="email" />
+            <textarea id="contact_message" name="contact[message]" placeholder="message"></textarea>
+            <input name="commit" type="submit" value="Send" />
+          </form>
+        </div>
+        <%=raw @page.content_for(:contact_mission_statement) %>
+        <div id="inquries">
+          <a href="#about">
+            <h4>
+              Would you like to know more?
+            </h4>
+            <img alt="would you like to know more" height="50px" src="/assets/mp_icons_question.svg" width="50px" /></a>
+        </div><!--end_inquiries-->
+      </div><!--end_.wrapper-->
+    </section><!--end_#contact-->    
+
+    <!-- Contact --> 
+    <section id="about">
+      <div class="wrapper">
+        <%=raw @page.content_for(:about_arnica) %>
+        <div id="laura-and-robert">
+          <h2>
+            Laura &amp; Robert
+          </h2>
+          <p>
+            Laura and Robert met while working at Associated Fabrication, a Brooklyn architectural design and fabrication studio, where they sharpened their skills and interest in design, CNC machining, 3D printing, thermoforming, and fine craftsmanship. They have worked with world renowned architects, designers, and artists including Zaha Hadid Architects, Studio Daniel Libeskind, Diller Scofidio + Renfro, Pentagram, Chanel, Issey Miyake, and Vito Acconci, among others.
+          </p>
+        </div>
+        <div id="laura-coombs">
+          <h2>
+            Laura Coombs
+          </h2>
+          <ul>
+            <li>
+              <a href="google.com"><img src="/assets/mp_icons_social_twitter.svg" /></a>
+            </li>
+            <li>
+              <a href="google.com"><img src="/assets/mp_icons_social_instagram.svg" /></a>
+            </li>
+            <li>
+              <a href="google.com"><img src="/assets/mp_icons_social_linkdin.svg" /></a>
+            </li>
+            <li>
+              <a href="google.com"><img src="/assets/mp_icons_social_github.svg" /></a>
+            </li>
+          </ul>
+          <img src="/assets/laura-coombs-avatar.png" />
+          <p>
+            Laura completed her Bachelor of Architecture degree at Cornell University where, for her thesis work, she designed and tested new geodesic tensegrity structures based on the work of Buckminster Fuller.  She has worked for Herman Miller as an Exhibition Designer and is currently pursuing an MFA in design at the Yale School of Art.
+          </p>
+        </div>
+        <div id="robert-lee-brackett">
+          <h2>
+            Robert Lee Brackett
+          </h2>
+          <ul>
+            <li>
+              <a href="http://www.digitalnouveau.com/"><img src="/assets/mp_icons_social_dn.svg" /></a>
+            </li>
+            <li>
+              <a href="https://twitter.com/rlblood"><img src="/assets/mp_icons_social_twitter.svg" /></a>
+            </li>
+            <li>
+              <a href="https://instagram.com/rooksisfun/"><img src="/assets/mp_icons_social_instagram.svg" /></a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/rlbrackett3"><img src="/assets/mp_icons_social_linkdin.svg" /></a>
+            </li>
+            <li>
+              <a href="https://github.com/rlbrackett3"><img src="/assets/mp_icons_social_github.svg" /></a>
+            </li>
+          </ul>
+          <img src="/assets/robert-lee-brackett-avatar.png" />
+          <p>
+            Robert studied architecture at the University of Illinois at Urbana-Champaign where he received the Earl Prize for Design and graduated with highest honors.  While there, he worked with Carolyn Dry researching self-healing material systems for NASA and the US Air Force.  Robert received an M.Arch from Columbia University’s GSAPP in New York with the AIA Medal for Excellence in Architecture.  He currently teaches architecture and design at The Pratt Institute, Columbia University, CityTech, Rensselaer Polytechnic Institute, and the New York Code &amp; Design Academy.
+          </p>
+        </div><!--end_robert-lee-bracket-->
+      </div><!--end_.wrapper-->
+    </section><!--end_.about-->    
+
+    <!-- Contact --> 
+    <%=raw @page.content_for(:design) %>
+
+   <footer>
+    <div class="wrapper">
+      <ul>
+        <li>
+          <a href="#design">Arnica </a>/ 
+        </li>
+        <li>
+          <a href="#about">About Us</a>/ 
+        </li>
+        <li>
+          <a href="#design">Design</a>
+        </li>
+      </ul>
+      <span><a href="mailto:hello@miscellaneousproj.com">hello@miscellaneousproj.com </a>&copy; 2015 Miscellaneous Projects, llc</span><a class="btn" href="#contact" id="work-with-us-footer">Work with us</a>
+    </div>
+  </footer>
+  
+  <script type="text/javascript">
+    $(function(){
+      $(".slides").slidesjs({
+        width: 940,
+        height: 528
+      });
+    });        
+  </script>
+</body>
