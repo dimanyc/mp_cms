@@ -21,6 +21,11 @@ group :development, :test do
   gem 'spring'
 end
 
+group :production do
+  gem 'pg', '0.17.1'
+  gem 'rails_12factor'
+end
+
 gem 'refinerycms', git: 'https://github.com/refinery/refinerycms', branch: 'master'
 gem 'quiet_assets', :group => :development
 gem 'refinerycms-acts-as-indexed', ['~> 2.0', '>= 2.0.0']

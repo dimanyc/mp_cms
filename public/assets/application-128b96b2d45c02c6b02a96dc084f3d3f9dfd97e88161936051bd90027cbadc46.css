@@ -1,0 +1,753 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+
+ */
+@import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css");
+/* line 4, c:/row/ruby200/lib/ruby/gems/2.0.0/gems/neat-1.7.2/app/assets/stylesheets/grid/_box-sizing.scss */
+html {
+  box-sizing: border-box;
+}
+
+/* line 9, c:/row/ruby200/lib/ruby/gems/2.0.0/gems/neat-1.7.2/app/assets/stylesheets/grid/_box-sizing.scss */
+*, *::after, *::before {
+  box-sizing: inherit;
+}
+
+@font-face {
+  font-family: 'genathregular_italic';
+  src: url(/assets/Genath-RegularIta-webfont-ab3e6a190f5d4bbe2f122079995cc375cce168fbdf2cc77f8645550814d9efa2.eot);
+  src: url(/assets/Genath-RegularIta-webfont-ab3e6a190f5d4bbe2f122079995cc375cce168fbdf2cc77f8645550814d9efa2.eot?#iefix) format("embedded-opentype"), url(/assets/Genath-RegularIta-webfont-72a5a22342948af0b09935002f8486145c589a1746ce55184f9bd832463c4d6e.woff2) format("woff2"), url(/assets/Genath-RegularIta-webfont-c0092647e50786b9d9966787be116d1a2152fa5538aef423be88ad7925d02eeb.woff) format("woff"), url(/assets/Genath-RegularIta-webfont-aac9af745d1390aff6b8dfe78971cdc172dcda55d087abf9b165e7ee3881086a.ttf) format("truetype"), url(/assets/Genath-RegularIta-webfont-6083f62d104bb9ae871bd6d6a33e815d1e461ff1d4cbb518cee74be548cc0513.svg#genathregular_italic) format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Genath-BoldIta';
+  src: url(/assets/Genath-BoldIta_gdi-8c1ff4b134e47feee03d7fa8a5fc0742eae11229fd9ee07dcdce5d032d27b492.eot);
+  src: url(/assets/Genath-BoldIta_gdi-8c1ff4b134e47feee03d7fa8a5fc0742eae11229fd9ee07dcdce5d032d27b492.eot?#iefix) format("embedded-opentype"), url(/assets/Genath-BoldIta_gdi-5b67f42e8b04076ab27d15274ee20e20d45b54709946c3bc9d93605fef40a33d.woff) format("woff"), url(/assets/Genath-BoldIta_gdi-caa24b832cfb500a4b72172e825cbb3ef32e0b05ff5178a7f9c4d90d2232637c.ttf) format("truetype"), url(/assets/Genath-BoldIta_gdi-9b9eeb9d11e9e93cb02b675cc92039b689adf51d6ae7433bfd4e45ea91601010.otf) format("opentype"), url(/assets/Genath-BoldIta_gdi-b4916124bd52bb3efc3396fed1614b7c15dde8cba6cdbbe46ec7923ee3b9b385.svg#Genath-BoldIta) format("svg");
+  font-weight: 700;
+  font-style: italic;
+  font-stretch: normal;
+  unicode-range: U+0020-25CA;
+}
+@font-face {
+  font-family: 'genathlight_italic';
+  src: url(/assets/Genath-LightIta-webfont-6c8463efad60995493be619487f33ef044687563a993958970915555125aa1dd.eot);
+  src: url(/assets/Genath-LightIta-webfont-6c8463efad60995493be619487f33ef044687563a993958970915555125aa1dd.eot?#iefix) format("embedded-opentype"), url(/assets/Genath-LightIta-webfont-e487e0e39c0d2296856e861173b72184b1d40d2ecfff3ba6fc4e683acabc4681.woff2) format("woff2"), url(/assets/Genath-LightIta-webfont-595efaa39f2a5a51f80b498780c696f0ed74befafd1cea6f667e18a1d288f03c.woff) format("woff"), url(/assets/Genath-LightIta-webfont-50332b1c19977d480baec457875f05fd3d50cc5f44752a08f75d45430227c9fb.ttf) format("truetype"), url(/assets/Genath-LightIta-webfont-e86284f29854f2bcf105306de2ef507b89b80ac47ea58dc8978e2f2054705033.svg#genathlight_italic) format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'gillsans_light';
+  src: url(/assets/GillSansMTPro-Light_gdi-4c3f3a1b4e1606168c079d9fcc772310164d0c7ca8627034d190f6b27d5b98cd.eot);
+  src: url(/assets/GillSansMTPro-Light_gdi-4c3f3a1b4e1606168c079d9fcc772310164d0c7ca8627034d190f6b27d5b98cd.eot?#iefix) format("embedded-opentype"), url(/assets/GillSansMTPro-Light_gdi-c8acaea91d6d904a3b299d4ef5587ec0de0474090550dce7e1322348477f2773.woff) format("woff"), url(/assets/GillSansMTPro-Light_gdi-d5a593bab4c13b63a29fa9da3ee9471c54ee80feb1ecce11989891f666c5cf3b.ttf) format("truetype"), url(/assets/GillSansMTPro-Light_gdi-1f5fafc7f7aad1f69dd708c6f239aa1152ac2ed0c4ec651d028012cfd4c6f40a.otf) format("opentype"), url(/assets/GillSansMTPro-Light_gdi-59ceff662a0e7c9f436bbe170de92372979fbe5ad95c281e212b8e5fd1eb1b7e.svg#GillSansMTPro-Light) format("svg");
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  unicode-range: U+0020-25CA;
+}
+/* line 1, c:/row/Robert/mp_cms/app/assets/stylesheets/design.scss */
+section#design {
+  top: 116.25rem;
+  background-image: url(/assets/arnica-background-1-e36fce73141ce010be185cb79530c723ccc2f456a2353132f1bfca6b1ea8bd26.jpg);
+  padding-top: 9.75rem;
+  height: 52.5rem;
+  float: left;
+  display: block;
+  margin-right: 1.05263%;
+  width: 100%;
+}
+/* line 89, c:/row/ruby200/lib/ruby/gems/2.0.0/gems/neat-1.7.2/app/assets/stylesheets/grid/_span-columns.scss */
+section#design:last-child {
+  margin-right: 0;
+}
+/* line 9, c:/row/Robert/mp_cms/app/assets/stylesheets/design.scss */
+section#design #product_design_and_creation, section#design #identity_and_branding, section#design #graphic_design, section#design #web_design {
+  float: left;
+  display: block;
+  margin-right: 1.05263%;
+  width: 49.47368%;
+  position: relative;
+}
+/* line 89, c:/row/ruby200/lib/ruby/gems/2.0.0/gems/neat-1.7.2/app/assets/stylesheets/grid/_span-columns.scss */
+section#design #product_design_and_creation:last-child, section#design #identity_and_branding:last-child, section#design #graphic_design:last-child, section#design #web_design:last-child {
+  margin-right: 0;
+}
+/* line 31, c:/row/Robert/mp_cms/app/assets/stylesheets/design.scss */
+section#design #product_design_and_creation, section#design #identity_and_branding, section#design #graphic_design, section#design #web_design {
+  float: left;
+  display: block;
+  margin-right: 1.05263%;
+  width: 49.47368%;
+  position: relative;
+  z-index: 1;
+}
+/* line 89, c:/row/ruby200/lib/ruby/gems/2.0.0/gems/neat-1.7.2/app/assets/stylesheets/grid/_span-columns.scss */
+section#design #product_design_and_creation:last-child, section#design #identity_and_branding:last-child, section#design #graphic_design:last-child, section#design #web_design:last-child {
+  margin-right: 0;
+}
+/* line 37, c:/row/Robert/mp_cms/app/assets/stylesheets/design.scss */
+section#design #product_design_and_creation h2, section#design #identity_and_branding h2, section#design #graphic_design h2, section#design #web_design h2 {
+  font-size: 1.6875rem;
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 0.75rem 0 0 1.25rem;
+  margin-top: 0;
+  height: 4.0625rem;
+  width: 29.375rem;
+  margin-bottom: 0;
+  position: absolute;
+  z-index: 100;
+}
+/* line 50, c:/row/Robert/mp_cms/app/assets/stylesheets/design.scss */
+section#design #product_design_and_creation img, section#design #identity_and_branding img, section#design #graphic_design img, section#design #web_design img {
+  width: 29.375rem;
+  height: 13.5625rem;
+  margin-top: 4.0625rem;
+}
+/* line 56, c:/row/Robert/mp_cms/app/assets/stylesheets/design.scss */
+section#design #product_design_and_creation a, section#design #identity_and_branding a, section#design #graphic_design a, section#design #web_design a {
+  height: 1.875rem;
+  width: 1.875rem;
+  background-image: url(/assets/mp_icons_arrow_next-e65f31ef3026c0ca91fcfa302af271be72d6e78e00091c55606ad1c1f3e72002.svg);
+  position: absolute;
+  top: 1.25rem;
+  right: 1.25rem;
+  z-index: 9999;
+}
+/* line 67, c:/row/Robert/mp_cms/app/assets/stylesheets/design.scss */
+section#design #product_design_and_creation .slidesjs-pagination-item, section#design #product_design_and_creation .slidesjs-previous.slidesjs-navigation, section#design #identity_and_branding .slidesjs-pagination-item, section#design #identity_and_branding .slidesjs-previous.slidesjs-navigation, section#design #graphic_design .slidesjs-pagination-item, section#design #graphic_design .slidesjs-previous.slidesjs-navigation, section#design #web_design .slidesjs-pagination-item, section#design #web_design .slidesjs-previous.slidesjs-navigation {
+  display: none;
+}
+/* line 69, c:/row/Robert/mp_cms/app/assets/stylesheets/design.scss */
+section#design #identity_and_branding, section#design #web_design {
+  margin-right: 0;
+}
+/* line 70, c:/row/Robert/mp_cms/app/assets/stylesheets/design.scss */
+section#design #product_design_and_creation, section#design #identity_and_branding {
+  margin-top: 1.25rem;
+}
+/* line 73, c:/row/Robert/mp_cms/app/assets/stylesheets/design.scss */
+section#design ul {
+  padding-left: 0;
+  list-style-type: none;
+  position: relative;
+  margin-top: 0;
+}
+/* line 80, c:/row/Robert/mp_cms/app/assets/stylesheets/design.scss */
+section#design ul li {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+/* line 85, c:/row/Robert/mp_cms/app/assets/stylesheets/design.scss */
+section#design ul li a {
+  text-decoration: none;
+  color: #101010;
+}
+/* line 88, c:/row/Robert/mp_cms/app/assets/stylesheets/design.scss */
+section#design ul li a h2 {
+  font-size: 1.6875rem;
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 0.75rem 0 0 1.25rem;
+  margin-top: 0;
+  height: 4.0625rem;
+  width: 29.375rem;
+}
+/* line 105, c:/row/Robert/mp_cms/app/assets/stylesheets/design.scss */
+section#design a img {
+  margin-top: -1.4375rem;
+}
+
+@media screen and (min-device-width: 1200px) and (max-device-width: 1500px) and (-webkit-min-device-pixel-ratio: 1) {
+  /* line 114, c:/row/Robert/mp_cms/app/assets/stylesheets/design.scss */
+  section.body {
+    margin-top: 0.9375rem;
+  }
+
+  /* line 115, c:/row/Robert/mp_cms/app/assets/stylesheets/design.scss */
+  section.body a {
+    min-height: 200px;
+  }
+}
+/* line 1, c:/row/Robert/mp_cms/app/assets/stylesheets/about.scss */
+section#about {
+  background-image: url(/assets/about-background-c871eae0c604b9487a7d183a891f096a7a7513cc4f2c5b7e7add0be81ace41ed.png);
+  top: 56.25rem;
+  padding-top: 11.8125rem;
+  padding-bottom: 24.875rem;
+  height: 60rem;
+}
+/* line 10, c:/row/Robert/mp_cms/app/assets/stylesheets/about.scss */
+section#about #featured-project,
+section#about #laura-and-robert,
+section#about #laura-coombs,
+section#about #robert-lee-brackett {
+  min-height: 22.1875rem;
+  float: left;
+  display: block;
+  margin-right: 1.05263%;
+  width: 49.47368%;
+  font-size: 0.875rem;
+  line-height: 1.1875rem;
+  color: #101010;
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 0rem 1.375rem 0rem 1.375rem;
+  font-family: "gillsans_light";
+}
+/* line 89, c:/row/ruby200/lib/ruby/gems/2.0.0/gems/neat-1.7.2/app/assets/stylesheets/grid/_span-columns.scss */
+section#about #featured-project:last-child,
+section#about #laura-and-robert:last-child,
+section#about #laura-coombs:last-child,
+section#about #robert-lee-brackett:last-child {
+  margin-right: 0;
+}
+/* line 25, c:/row/Robert/mp_cms/app/assets/stylesheets/about.scss */
+section#about #featured-project h2,
+section#about #laura-and-robert h2,
+section#about #laura-coombs h2,
+section#about #robert-lee-brackett h2 {
+  font-size: 1.625rem;
+  float: left;
+  display: block;
+  margin-right: 2.12766%;
+  width: 48.93617%;
+  margin-bottom: -0.3125rem;
+  margin-top: 0.875rem;
+}
+/* line 89, c:/row/ruby200/lib/ruby/gems/2.0.0/gems/neat-1.7.2/app/assets/stylesheets/grid/_span-columns.scss */
+section#about #featured-project h2:last-child,
+section#about #laura-and-robert h2:last-child,
+section#about #laura-coombs h2:last-child,
+section#about #robert-lee-brackett h2:last-child {
+  margin-right: 0;
+}
+/* line 32, c:/row/Robert/mp_cms/app/assets/stylesheets/about.scss */
+section#about #featured-project img,
+section#about #laura-and-robert img,
+section#about #laura-coombs img,
+section#about #robert-lee-brackett img {
+  float: left;
+  display: block;
+  margin-right: 2.12766%;
+  width: 31.91489%;
+  width: 6.875rem;
+  height: 6.875rem;
+  border-radius: 50%;
+  margin-top: 1.75rem;
+  padding-right: 0 1.25rem 0 1.25rem;
+  margin-right: 1.875rem;
+}
+/* line 89, c:/row/ruby200/lib/ruby/gems/2.0.0/gems/neat-1.7.2/app/assets/stylesheets/grid/_span-columns.scss */
+section#about #featured-project img:last-child,
+section#about #laura-and-robert img:last-child,
+section#about #laura-coombs img:last-child,
+section#about #robert-lee-brackett img:last-child {
+  margin-right: 0;
+}
+/* line 42, c:/row/Robert/mp_cms/app/assets/stylesheets/about.scss */
+section#about #featured-project p,
+section#about #laura-and-robert p,
+section#about #laura-coombs p,
+section#about #robert-lee-brackett p {
+  float: left;
+  display: block;
+  margin-right: 2.12766%;
+  width: 65.95745%;
+}
+/* line 89, c:/row/ruby200/lib/ruby/gems/2.0.0/gems/neat-1.7.2/app/assets/stylesheets/grid/_span-columns.scss */
+section#about #featured-project p:last-child,
+section#about #laura-and-robert p:last-child,
+section#about #laura-coombs p:last-child,
+section#about #robert-lee-brackett p:last-child {
+  margin-right: 0;
+}
+/* line 43, c:/row/Robert/mp_cms/app/assets/stylesheets/about.scss */
+section#about #featured-project ul,
+section#about #laura-and-robert ul,
+section#about #laura-coombs ul,
+section#about #robert-lee-brackett ul {
+  list-style-type: none;
+  float: right;
+  margin-top: 1.25rem;
+}
+/* line 49, c:/row/Robert/mp_cms/app/assets/stylesheets/about.scss */
+section#about #featured-project ul li,
+section#about #laura-and-robert ul li,
+section#about #laura-coombs ul li,
+section#about #robert-lee-brackett ul li {
+  float: left;
+  width: 1.875rem;
+  height: 1.875rem;
+  margin-right: 0.625rem;
+}
+/* line 56, c:/row/Robert/mp_cms/app/assets/stylesheets/about.scss */
+section#about #featured-project ul li a img,
+section#about #laura-and-robert ul li a img,
+section#about #laura-coombs ul li a img,
+section#about #robert-lee-brackett ul li a img {
+  width: 1.875rem;
+  height: 1.875rem;
+  margin-top: 0;
+}
+/* line 63, c:/row/Robert/mp_cms/app/assets/stylesheets/about.scss */
+section#about #featured-project ul li:nth-child(4),
+section#about #laura-and-robert ul li:nth-child(4),
+section#about #laura-coombs ul li:nth-child(4),
+section#about #robert-lee-brackett ul li:nth-child(4) {
+  margin-right: 0;
+}
+/* line 66, c:/row/Robert/mp_cms/app/assets/stylesheets/about.scss */
+section#about #featured-project,
+section#about #laura-and-robert {
+  margin-bottom: 0.625rem;
+  min-height: 15.3125rem;
+}
+/* line 71, c:/row/Robert/mp_cms/app/assets/stylesheets/about.scss */
+section#about #featured-project h2,
+section#about #laura-and-robert h2 {
+  float: left;
+  display: block;
+  margin-right: 2.12766%;
+  width: 100%;
+}
+/* line 89, c:/row/ruby200/lib/ruby/gems/2.0.0/gems/neat-1.7.2/app/assets/stylesheets/grid/_span-columns.scss */
+section#about #featured-project h2:last-child,
+section#about #laura-and-robert h2:last-child {
+  margin-right: 0;
+}
+/* line 72, c:/row/Robert/mp_cms/app/assets/stylesheets/about.scss */
+section#about #featured-project p,
+section#about #laura-and-robert p {
+  float: left;
+  display: block;
+  margin-right: 2.12766%;
+  width: 100%;
+}
+/* line 89, c:/row/ruby200/lib/ruby/gems/2.0.0/gems/neat-1.7.2/app/assets/stylesheets/grid/_span-columns.scss */
+section#about #featured-project p:last-child,
+section#about #laura-and-robert p:last-child {
+  margin-right: 0;
+}
+/* line 75, c:/row/Robert/mp_cms/app/assets/stylesheets/about.scss */
+section#about #featured-project ul li, section#about #featured-project ul li:nth-child(4),
+section#about #laura-and-robert ul li,
+section#about #laura-and-robert ul li:nth-child(4) {
+  margin-right: 0.625rem;
+}
+/* line 79, c:/row/Robert/mp_cms/app/assets/stylesheets/about.scss */
+section#about #featured-project ul li:nth-child(5),
+section#about #laura-and-robert ul li:nth-child(5) {
+  margin-right: 0;
+}
+/* line 88, c:/row/Robert/mp_cms/app/assets/stylesheets/about.scss */
+section#about #robert-lee-brackett ul {
+  padding-left: 0;
+}
+/* line 89, c:/row/Robert/mp_cms/app/assets/stylesheets/about.scss */
+section#about #robert-lee-brackett ul li, section#about #robert-lee-brackett ul li:nth-child(4) {
+  margin-right: 0.625rem;
+}
+/* line 90, c:/row/Robert/mp_cms/app/assets/stylesheets/about.scss */
+section#about #robert-lee-brackett ul li:nth-child(5) {
+  margin-right: 0;
+}
+/* line 92, c:/row/Robert/mp_cms/app/assets/stylesheets/about.scss */
+section#about #laura-and-robert {
+  margin-right: 0;
+}
+
+/* line 1, c:/row/Robert/mp_cms/app/assets/stylesheets/contact.scss */
+section#contact {
+  background-image: url(/assets/arnica-products-e04c9d8e48e9a504b22c77a7178dba408b66a5ce0018bd29a5c1982972d4dab4.jpg);
+  top: 0;
+  padding-top: 9.6875rem;
+  padding-bottom: 11.875rem;
+  height: 56.25rem;
+}
+/* line 9, c:/row/Robert/mp_cms/app/assets/stylesheets/contact.scss */
+section#contact #contact-form, section#contact #mission-statement {
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 1.25rem;
+}
+/* line 10, c:/row/Robert/mp_cms/app/assets/stylesheets/contact.scss */
+section#contact #contact-form {
+  float: left;
+  display: block;
+  margin-right: 1.05263%;
+  width: 57.89474%;
+  margin-top: 8.125rem;
+  overflow: visible;
+  font-family: "gillsans_light";
+}
+/* line 89, c:/row/ruby200/lib/ruby/gems/2.0.0/gems/neat-1.7.2/app/assets/stylesheets/grid/_span-columns.scss */
+section#contact #contact-form:last-child {
+  margin-right: 0;
+}
+/* line 16, c:/row/Robert/mp_cms/app/assets/stylesheets/contact.scss */
+section#contact #contact-form #contact-information {
+  width: 13.125rem;
+  float: left;
+}
+/* line 18, c:/row/Robert/mp_cms/app/assets/stylesheets/contact.scss */
+section#contact #contact-form #contact-information h2 {
+  margin-top: 0;
+  font-size: 1.625rem;
+}
+/* line 25, c:/row/Robert/mp_cms/app/assets/stylesheets/contact.scss */
+section#contact #contact-form #contact-information span {
+  display: block;
+  text-align: justify;
+  overflow-x: hidden;
+  margin-bottom: 0.6875rem;
+}
+/* line 31, c:/row/Robert/mp_cms/app/assets/stylesheets/contact.scss */
+section#contact #contact-form #contact-information span b {
+  font-weight: normal;
+}
+/* line 32, c:/row/Robert/mp_cms/app/assets/stylesheets/contact.scss */
+section#contact #contact-form #contact-information span b:after {
+  float: left;
+  width: 0;
+  white-space: nowrap;
+  content: "                                        " "                                        " "                                        " "                                        ";
+}
+/* line 43, c:/row/Robert/mp_cms/app/assets/stylesheets/contact.scss */
+section#contact #contact-form #contact-information span em {
+  float: right;
+  font-style: normal;
+}
+/* line 51, c:/row/Robert/mp_cms/app/assets/stylesheets/contact.scss */
+section#contact #contact-form form {
+  width: 15.625rem;
+  float: right;
+  margin-top: 0.3125rem;
+}
+/* line 56, c:/row/Robert/mp_cms/app/assets/stylesheets/contact.scss */
+section#contact #contact-form form input[type="color"], section#contact #contact-form form input[type="date"], section#contact #contact-form form input[type="datetime"], section#contact #contact-form form input[type="datetime-local"], section#contact #contact-form form input[type="email"], section#contact #contact-form form input[type="month"], section#contact #contact-form form input[type="number"], section#contact #contact-form form input[type="password"], section#contact #contact-form form input[type="search"], section#contact #contact-form form input[type="tel"], section#contact #contact-form form input[type="text"], section#contact #contact-form form input[type="time"], section#contact #contact-form form input[type="url"], section#contact #contact-form form input[type="week"], section#contact #contact-form form textarea {
+  border: 0.0625rem #101010 solid;
+  padding: 0.375rem 0.75rem 0.375rem 0.75rem;
+  width: 15.625rem;
+  color: #c0c0c0;
+}
+/* line 63, c:/row/Robert/mp_cms/app/assets/stylesheets/contact.scss */
+section#contact #contact-form form input[type="color"], section#contact #contact-form form input[type="date"], section#contact #contact-form form input[type="datetime"], section#contact #contact-form form input[type="datetime-local"], section#contact #contact-form form input[type="email"], section#contact #contact-form form input[type="month"], section#contact #contact-form form input[type="number"], section#contact #contact-form form input[type="password"], section#contact #contact-form form input[type="search"], section#contact #contact-form form input[type="tel"], section#contact #contact-form form input[type="text"], section#contact #contact-form form input[type="time"], section#contact #contact-form form input[type="url"], section#contact #contact-form form input[type="week"], section#contact #contact-form form textarea:not(:first-child) {
+  margin-bottom: 10px;
+}
+/* line 67, c:/row/Robert/mp_cms/app/assets/stylesheets/contact.scss */
+section#contact #contact-form form #contact_message {
+  height: 120px;
+  margin-bottom: 0;
+}
+/* line 68, c:/row/Robert/mp_cms/app/assets/stylesheets/contact.scss */
+section#contact #contact-form form input[type="submit"] {
+  background-color: #101010;
+  border: 0;
+  color: white;
+  font-size: 1.125rem;
+  width: 250px;
+  height: 40px;
+  margin-top: 0.9375rem;
+  float: right;
+  margin-bottom: 0.5625rem;
+  padding-top: 0;
+}
+/* line 83, c:/row/Robert/mp_cms/app/assets/stylesheets/contact.scss */
+section#contact #mission-statement {
+  float: left;
+  display: block;
+  margin-right: 1.05263%;
+  width: 32.63158%;
+  margin-right: 0;
+  margin-left: 8.42105%;
+  font-family: "gillsans_light";
+  margin-top: 3.4375rem;
+  overflow: hidden;
+}
+/* line 89, c:/row/ruby200/lib/ruby/gems/2.0.0/gems/neat-1.7.2/app/assets/stylesheets/grid/_span-columns.scss */
+section#contact #mission-statement:last-child {
+  margin-right: 0;
+}
+/* line 92, c:/row/Robert/mp_cms/app/assets/stylesheets/contact.scss */
+section#contact #mission-statement h2 {
+  margin-top: 0;
+}
+/* line 93, c:/row/Robert/mp_cms/app/assets/stylesheets/contact.scss */
+section#contact #mission-statement h3 {
+  font-weight: normal;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+}
+/* line 94, c:/row/Robert/mp_cms/app/assets/stylesheets/contact.scss */
+section#contact #mission-statement h4 {
+  font-size: 2rem;
+  font-family: "genathregular_italic";
+  font-weight: normal;
+  margin-top: 2.1875rem;
+  margin-bottom: 2rem;
+}
+/* line 102, c:/row/Robert/mp_cms/app/assets/stylesheets/contact.scss */
+section#contact #mission-statement input[type="button"] {
+  background-color: #101010;
+  border: 0;
+  color: white;
+  font-size: 1.125rem;
+  height: 2.5rem;
+  width: 100%;
+  float: right;
+  margin-bottom: 0.625rem;
+}
+/* line 115, c:/row/Robert/mp_cms/app/assets/stylesheets/contact.scss */
+section#contact #inquries {
+  float: left;
+  display: block;
+  margin-right: 1.05263%;
+  width: 41.05263%;
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 1.25rem;
+  margin-bottom: 1.875rem;
+}
+/* line 89, c:/row/ruby200/lib/ruby/gems/2.0.0/gems/neat-1.7.2/app/assets/stylesheets/grid/_span-columns.scss */
+section#contact #inquries:last-child {
+  margin-right: 0;
+}
+/* line 121, c:/row/Robert/mp_cms/app/assets/stylesheets/contact.scss */
+section#contact #inquries a {
+  text-decoration: none;
+  color: #101010;
+}
+/* line 126, c:/row/Robert/mp_cms/app/assets/stylesheets/contact.scss */
+section#contact #inquries h4 {
+  font-family: "genathregular_italic";
+  font-size: 1.625rem;
+  font-weight: normal;
+  margin-top: 0.875rem;
+  margin-bottom: 0;
+  display: block;
+  float: left;
+}
+/* line 136, c:/row/Robert/mp_cms/app/assets/stylesheets/contact.scss */
+section#contact #inquries img {
+  width: 3.125rem;
+  height: 3.125rem;
+  float: left;
+  margin-left: 1.25rem;
+}
+
+/* line 27, c:/row/Robert/mp_cms/app/assets/stylesheets/application.css.scss */
+html {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  overflow-y: scroll;
+}
+
+/* line 35, c:/row/Robert/mp_cms/app/assets/stylesheets/application.css.scss */
+body {
+  background-size: cover;
+  background-position: left;
+  font-family: "gillsans";
+  line-height: 1.125rem;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 1.5 / 1), only screen and (min-resolution: 144dpi), only screen and (min-resolution: 1.5dppx) {
+  /* line 35, c:/row/Robert/mp_cms/app/assets/stylesheets/application.css.scss */
+  body {
+    width: 20em;
+  }
+}
+
+/* line 44, c:/row/Robert/mp_cms/app/assets/stylesheets/application.css.scss */
+section {
+  background-size: cover;
+  background-position: center center;
+  position: absolute;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: 1;
+}
+
+/* line 57, c:/row/Robert/mp_cms/app/assets/stylesheets/application.css.scss */
+header {
+  background-color: rgba(255, 255, 255, 0.7);
+  height: 8.4375rem;
+  border-top: 3.75rem #58595b solid;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+}
+/* line 66, c:/row/Robert/mp_cms/app/assets/stylesheets/application.css.scss */
+header h1 {
+  display: table-cell;
+  font-family: "genathregular_italic";
+  overflow: hidden;
+}
+/* line 71, c:/row/Robert/mp_cms/app/assets/stylesheets/application.css.scss */
+header h1 a {
+  color: #101010;
+  font-size: 21px;
+  font-weight: normal;
+  text-decoration: none;
+}
+/* line 80, c:/row/Robert/mp_cms/app/assets/stylesheets/application.css.scss */
+header form {
+  text-align: right;
+}
+/* line 83, c:/row/Robert/mp_cms/app/assets/stylesheets/application.css.scss */
+header form label {
+  font-family: "genathregular_italic";
+  font-weight: normal;
+  color: #808080;
+  font-size: 0.875rem;
+}
+/* line 90, c:/row/Robert/mp_cms/app/assets/stylesheets/application.css.scss */
+header form input {
+  border: 0;
+  border-bottom: 1px solid #c0c0c0;
+  background-color: rgba(88, 89, 91, 0);
+  font-family: "gillsans";
+  font-size: 12px;
+  font-weight: normal;
+  letter-spacing: 0.01em;
+  margin-left: 3px;
+}
+/* line 101, c:/row/Robert/mp_cms/app/assets/stylesheets/application.css.scss */
+header form input[type="submit"] {
+  border: none;
+  background-image: url(/assets/carret-right-a55f7e73d86c18fa2c4fc3658ed6d5d2c0dff8096551ef6d4cb7deb666614827.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 10px;
+}
+
+/* line 112, c:/row/Robert/mp_cms/app/assets/stylesheets/application.css.scss */
+footer {
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  background-color: rgba(255, 255, 255, 0.7);
+  height: 60px;
+  z-index: 2;
+  float: left;
+  display: block;
+  margin-right: 1.05263%;
+  width: 100%;
+}
+/* line 89, c:/row/ruby200/lib/ruby/gems/2.0.0/gems/neat-1.7.2/app/assets/stylesheets/grid/_span-columns.scss */
+footer:last-child {
+  margin-right: 0;
+}
+/* line 121, c:/row/Robert/mp_cms/app/assets/stylesheets/application.css.scss */
+footer .wrapper {
+  margin-top: 0;
+}
+/* line 123, c:/row/Robert/mp_cms/app/assets/stylesheets/application.css.scss */
+footer ul {
+  float: left;
+  display: block;
+  margin-right: 1.05263%;
+  width: 32.63158%;
+  list-style-type: none;
+  margin-top: 22px;
+  margin-bottom: 0;
+}
+/* line 89, c:/row/ruby200/lib/ruby/gems/2.0.0/gems/neat-1.7.2/app/assets/stylesheets/grid/_span-columns.scss */
+footer ul:last-child {
+  margin-right: 0;
+}
+/* line 129, c:/row/Robert/mp_cms/app/assets/stylesheets/application.css.scss */
+footer ul li {
+  float: left;
+  font-family: "gillsans";
+  color: #c0c0c0;
+}
+/* line 134, c:/row/Robert/mp_cms/app/assets/stylesheets/application.css.scss */
+footer ul li a {
+  text-transform: uppercase;
+  text-decoration: none;
+  font-family: "Genath-BoldIta";
+  color: #101010;
+  margin-right: 8px;
+  font-style: italic;
+}
+/* line 144, c:/row/Robert/mp_cms/app/assets/stylesheets/application.css.scss */
+footer ul li:not(first-child) {
+  margin-left: 8px;
+}
+/* line 147, c:/row/Robert/mp_cms/app/assets/stylesheets/application.css.scss */
+footer span {
+  float: left;
+  display: block;
+  margin-right: 1.05263%;
+  width: 32.63158%;
+  text-align: center;
+  font-family: "genathregular_italic";
+  color: #c0c0c0;
+  font-size: 0.875rem;
+  margin-top: 10px;
+}
+/* line 89, c:/row/ruby200/lib/ruby/gems/2.0.0/gems/neat-1.7.2/app/assets/stylesheets/grid/_span-columns.scss */
+footer span:last-child {
+  margin-right: 0;
+}
+/* line 156, c:/row/Robert/mp_cms/app/assets/stylesheets/application.css.scss */
+footer span a:not(.btn) {
+  text-decoration: none;
+  color: #c0c0c0;
+  display: block;
+  margin-bottom: 5px;
+}
+/* line 166, c:/row/Robert/mp_cms/app/assets/stylesheets/application.css.scss */
+footer input[type="button"], footer a.btn {
+  background-color: #101010;
+  border: 0;
+  color: white;
+  font-family: "gillsans_light";
+  font-size: 18px;
+  width: 250px;
+  height: 40px;
+  margin-top: 11px;
+  float: right;
+  margin-right: 30px;
+  text-decoration: none;
+  text-align: center;
+  padding-top: 10px;
+}
+
+/* line 185, c:/row/Robert/mp_cms/app/assets/stylesheets/application.css.scss */
+.wrapper {
+  max-width: 950px;
+  margin-left: auto;
+  margin-right: auto;
+  display: table;
+  width: 100%;
+  margin-top: 0.375rem;
+}
+/* line 20, c:/row/ruby200/lib/ruby/gems/2.0.0/gems/bourbon-4.2.2/app/assets/stylesheets/addons/_clearfix.scss */
+.wrapper::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+/* line 186, c:/row/Robert/mp_cms/app/assets/stylesheets/application.css.scss */
+h1, h2 {
+  font-family: "genathregular_italic";
+  font-weight: normal;
+  font-size: 3rem;
+  line-height: 2.5rem;
+}
+
+/* line 189, c:/row/Robert/mp_cms/app/assets/stylesheets/application.css.scss */
+.sendgrid-subscription-widget label > span {
+  display: none !important;
+}
