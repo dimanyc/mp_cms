@@ -16,9 +16,4 @@ $(function(){
     },
   });
 
-
-  // $('.myNext').click(function() {
-  //   $('.slidejs-next').trigger('click');
-  // });
-
 });

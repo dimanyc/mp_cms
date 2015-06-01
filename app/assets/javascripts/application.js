@@ -23,12 +23,6 @@ $(document).ready (function(){
   $( "#work-with-us,#work-with-us-footer" ).click(function() {
     $( "#contact-form:not(#contact-form h2)" ).css({opacity: 0.0, visibility: "visible"}).animate({opacity: 1.0},500);
     $( "#contact-form h2,#contact-form span,#contact-form form" ).css({opacity: 0.0, visibility: "visible"}).delay(500).animate({opacity: 1.0},500);
-    // $( "#contact-form h2" ).css({opacity: 0.0, visibility: "visible"}).delay(500).animate({opacity: 1.0},500);
-    // $( "#contact-form span").each(function(i){
-    //    $(this).css({opacity: 0.0, visibility: "visible"}).delay(1000).delay(500*i).animate({opacity: 1.0},500);
-    // });
-    // $( "#contact-form form" ).css({opacity: 0.0, visibility: "visible"}).delay(2500).animate({opacity: 1.0},500);
-
   });
 
   // smooth scroll 
@@ -50,7 +44,7 @@ $(document).ready (function(){
       $('footer').fadeOut(500);
     }
 
-    // crossfade magic here
+    // background crossfade
     var y = $(this).scrollTop();
     if (y > 960) {
         $('#about_background').fadeIn({});
@@ -64,10 +58,10 @@ $(document).ready (function(){
     
   }); 
 
-  // parallax
-  $('#contact').parallax({
-    speed : 0.25
-  });
+  // // parallax
+  // $('#contact').parallax({
+  //   speed : 0.25
+  // });
 
   // smoothing the page scroll
   $("html").niceScroll();
