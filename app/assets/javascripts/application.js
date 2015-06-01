@@ -39,7 +39,7 @@ $(document).ready (function(){
       return false;
   });
 
-  // footer animation on scroll
+  // footer animation on scroll + background crossfade
   $(window).scroll(function(){
     if($(document).scrollTop() > 500)
     {
@@ -49,6 +49,19 @@ $(document).ready (function(){
     {
       $('footer').fadeOut(500);
     }
+
+    // crossfade magic here
+    var y = $(this).scrollTop();
+    if (y > 960) {
+        $('#about_background').fadeIn({});
+    }
+    else {$('#about_background').fadeOut('fast')};
+    
+    if (y > 1800) {
+        $('#design_background').fadeIn({});
+    }
+    else {$('#design_background').fadeOut('fast')};
+    
   }); 
 
   // parallax
@@ -58,6 +71,5 @@ $(document).ready (function(){
 
   // smoothing the page scroll
   $("html").niceScroll();
-
 
 });

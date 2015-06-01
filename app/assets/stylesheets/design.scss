@@ -10,24 +10,8 @@ section#design
   {
     @include span-columns(6 of 12);
     position: relative;
-//     img
-//     {
-//       position:absolute;
-//       top:0;
-//       left:0;
-//       width:rem(470);
-//       height:rem(217);
-//     }
-//     .slidesjs-pagination-item{display: none;}    
-//   }
-  
-//   .slides
-//   {
+  }
 
-//   }
-//   #identity_and_branding,#web_design{@include omega();}
-//   #product_design_and_creation,#identity_and_branding {margin-top:rem(20);margin-bottom:ren(10);}
-}
   #product_design_and_creation,#identity_and_branding,#graphic_design,#web_design
   {
     @include span-columns(6 of 12);
@@ -66,9 +50,9 @@ section#design
    
     .slidesjs-pagination-item,.slidesjs-previous.slidesjs-navigation{display: none;}
   }
-  #identity_and_branding,#web_design{@include omega();}
+ 
+  #identity_and_branding,#web_design {@include omega();}
   #product_design_and_creation,#identity_and_branding {margin-top:rem(20)}
-
 
   ul
   {
@@ -97,10 +81,6 @@ section#design
       }
     }
   }
-
-  // ul:nth-child(1),ul:nth-child(2){margin-bottom:rem(10);}
-  // ul:nth-child(2),ul:nth-child(4){@include omega();}
-  // ul:nth-child(3),ul:nth-child(4){margin-top:0;}
 
   a img {  margin-top: rem(-23);}
 
