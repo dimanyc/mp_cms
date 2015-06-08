@@ -16,9 +16,10 @@
   <script data-turbolinks-track="true" src="/assets/application.js?body=1"></script>
   <meta content="authenticity_token" name="csrf-param" />
   <body>
-  <img src="assets/about-background.png" id="about_background" />
+  <%=raw @page.content_for(:background_images) %>
+  <!-- <img src="assets/about-background.png" id="about_background" />
   <img src="assets/arnica-background-1.jpg" id="design_background" />
-    <header>
+   -->  <header>
       <div class="wrapper">
 
         <h1>
